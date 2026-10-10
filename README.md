@@ -1,6 +1,14 @@
-# Sentient_NPC  
-## Lightweight Offline Voice-Interactive NPC Dialogue Framework  
-*A research-oriented, fully offline conversational AI system for immersive games*
+# TalkWithSentientNPC (Interactive Web App)  
+## Web Experience for Offline Voice-Interactive NPC Dialogue Framework  
+*An interactive, hosted web application showcasing our previous research on offline conversational AI for games.*
+
+---
+
+## About This Repository
+
+This repository contains the **web frontend and FastAPI backend** built upon our original AI research project, **Sentient_NPC**. While the underlying models and pipelines were originally designed to run fully offline on edge devices, this project adapts our work into a hosted web experience. It allows users to seamlessly interact with our custom-trained, lightweight Transformer model directly from their browser using voice!
+
+*(Note: The original research artifacts, training notebook `training.ipynb`, and legacy scripts are preserved in this repository for reference.)*
 
 ---
 
