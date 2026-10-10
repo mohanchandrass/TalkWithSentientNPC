@@ -118,13 +118,22 @@ These tools help interpret **why** the model generates a response — a strong p
 - Metric computation (BLEU, ROUGE, METEOR, BERTScore)
 - XAI experiments
 
-### Quick Start (Colab)
+### Quick Start (Local App)
 
-```bash
-pip install transformers datasets sacrebleu bert-score tensorflow
-```
-
-Open `training.ipynb` and run cells sequentially.
+1. **Install Python dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. **Install Frontend dependencies:**
+   ```bash
+   cd frontend
+   npm install
+   cd ..
+   ```
+3. **Run the Application:**
+   Run `run_app.bat` from the terminal or double click it to start both the FastAPI backend and React frontend.
+4. **Stop the Application:**
+   Run `stop_app.bat` to cleanly terminate the services.
 
 ---
 
@@ -133,14 +142,14 @@ Open `training.ipynb` and run cells sequentially.
 ```
 Sentient_NPC/
 │
-├── training.ipynb        # Full research & training pipeline
-├── models/               # Saved model checkpoints
-├── tokenizers/           # Serialized vocabularies
-├── results/              # Plots & figures from report
-├── stt/                  # Speech-to-Text (Vosk)
-├── tts/                  # Text-to-Speech (Silero)
-├── main.py               # End-to-end inference
-├── requirements.txt
+├── backend/              # FastAPI server, Services (STT, TTS, Chatbot), Models
+├── frontend/             # React (Vite/TSX) web interface
+├── legacy/               # Legacy inference scripts
+├── results/              # Evaluation results and figures
+├── training.ipynb        # Full research & model training pipeline
+├── run_app.bat           # Startup script
+├── stop_app.bat          # Shutdown script
+├── requirements.txt      # Python dependencies
 └── README.md
 ```
 
